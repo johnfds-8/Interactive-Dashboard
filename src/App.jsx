@@ -5,6 +5,7 @@ import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Products from "./pages/products/Products";
 import Users from "./pages/users/Users";
+import MsgBox from "./pages/msgbox/MsgBox";
 import "./styles/global.scss"
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
@@ -48,13 +49,17 @@ function App() {
           path: "/products",
           element: <Products />,
         },
+        {
+          path: "/msgbox",
+          element: <MsgBox/>,
+        },
       ],
     },
 
     {
-      path:"/login",
-      element:<Login/>,
-    }
+      path: "/login",
+      element: <Login />,
+    },
   ]);
 
   return <RouterProvider router={router} />;

@@ -1,8 +1,9 @@
 import BarChartBox from "../../components/barchartbox/BarChartBox";
+import BigChartBox from "../../components/bigchartbox/BigChartBox";
 import ChartBox from "../../components/chartbox/ChartBox";
 import PieChartBox from "../../components/piechartbox/PieChartBox";
 import TopBox from "../../components/topbox/TopBox";
-import { chartBoxUser } from "../../data";
+
 import "./home.scss";
 
 function Home() {
@@ -26,7 +27,9 @@ function Home() {
       <div className="box box6">
         <ChartBox />
       </div>
-      <div className="box box7">Box7</div>
+      <div className="box box7">
+        <BigChartBox/>
+      </div>
       <div className="box box8">
         <BarChartBox/>
       </div>
