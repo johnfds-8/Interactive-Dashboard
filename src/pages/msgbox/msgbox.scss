@@ -1,3 +1,5 @@
+@import "../../styles/responsive.scss";
+
 .msgbox {
   padding: 5%;
   border: 2px solid grey;
@@ -6,6 +8,11 @@
   .devImg {
     display: flex;
     justify-content: center;
+
+     @include sm {
+      height: 150px;
+      width: 100%;
+  }
   }
 
   .desc {
@@ -15,6 +22,11 @@
     font-weight: bold;
     font-size: 42px;
     font-family: "Courier New", Courier, monospace;
+
+      @include sm {
+      display: flex;
+      justify-content: center;
+  }
   }
 
   .addSoon {
